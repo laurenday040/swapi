@@ -13,7 +13,6 @@ export class AlertComponent implements OnInit {
   constructor(private alertService: AlertService) {
     this.alertService.alertEmmiter.subscribe(
       data => {
-        console.log("ALERT-COMPONENT:", data)
         this.alertModel = data;
       }
     )
