@@ -5,11 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Requirements
 
 The main requirements are:
-    - Install [Nodejs](https://nodejs.org/es/)
-    - Now you have to go to directory project to install npm dependency
-    - You have 2 choices: 
-        - Use npm install
-        - Install Yarn package manager and install packages with yarn RECOMENDED
+
+- Install [Nodejs](https://nodejs.org/es/)
+- Now you have to go to directory project to install npm dependency
+- You have 2 choices:
+  - Use npm install
+  - Install Yarn package manager and install packages with yarn RECOMENDED
 
 ## Development server
 
@@ -23,9 +24,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Code Coverage
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run 'ng --code-coverage', that will generate a dashboard test for you in: '/swapi/coverage/swapiApp/index.html'
 
 ## Further help
 
