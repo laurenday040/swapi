@@ -26,7 +26,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Code Coverage
 
-Run 'ng --code-coverage', that will generate a dashboard test for you in: '/swapi/coverage/swapiApp/index.html'
+Run `ng --code-coverage`, that will generate a dashboard test for you in: `/swapi/coverage/swapiApp/index.html`
 
 ## Further help
 
