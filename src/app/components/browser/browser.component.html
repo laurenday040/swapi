@@ -1,0 +1,40 @@
+<div class="browser-main row no-margin app-main ease-in relative" *ngIf="search">
+    <div class="loading absolute row no-margin col-12 flex horizontal-center vertical-center ease-in" *ngIf="viewStatus.loading">
+        <mat-spinner></mat-spinner>
+    </div>
+    <div class="top-header item col-6">
+        <span>
+            {{ COMMON.HI }} <b>{{ user }}</b>
+        </span>
+    </div>
+    <div class="top-header col-6 flex horizontal-end vertical-center">
+        <div class="logout">
+            <button mat-raised-button mat-button color="" (click)="exit()">{{ COMMON.EXIT }}</button>
+        </div>
+    </div>
+    <div class="row no-margin col-12 flex horizontal-center vertical-center item browser-body">
+        <div class="row no-margin col-12 no-padding flex horizontal-center vertical-center">
+            <div class="row no-margin col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <mat-form-field class="row no-margin col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <input matInput [matDatepicker]="picker" [formControl]="search.controls.startDate" [placeholder]="BROWSER.CHOOSE_DATE" />
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field class="row no-margin col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <input matInput [placeholder]="BROWSER.IN_MEGALIGHTS" [formControl]="search.controls.mglt" />
+                </mat-form-field>
+                <div class="row no-margin no-padding flex horizontal-end vertical-center col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <div class="btn-wrapper">
+                        <button mat-button color="" [disabled]="!search.valid" (click)="calculate()">{{ COMMON.CALCULATE }}</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-margin col-12 result-list" *ngIf="!viewStatus.loading && shipsList">
+                <div class="list-wrapper row no-margin col-12 no-padding" *ngIf="shipsList" [@filterAnimation]="shipsList.length">
+                    <app-card-component class="app-card col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let item of shipsList" [(item)]="item"></app-card-component>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

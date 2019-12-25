@@ -1,0 +1,41 @@
+.browser-main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .top-header {
+        height: 60px;
+    }
+    .logout {
+        height: 30px;
+    }
+    .browser-body {
+        min-height: 90vh;
+        padding: 14px 0;
+    }
+
+    .btn-wrapper {
+        height: 40px;
+    }
+    .app-card {
+        padding: 8px;
+    }
+    .result-list {
+        padding-top: 24px;
+    }
+    .loading {
+        z-index: 3;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(39, 39, 39, 0.95);
+    }
+}

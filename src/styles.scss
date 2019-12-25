@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+}
+body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+/* FLEX POSITON */
+.flex {
+    display: flex;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+.horizontal-end {
+    justify-content: flex-end;
+}
+.horizontal-start {
+    justify-content: flex-start;
+}
+/*
+  BOX
+*/
+.wrapper-box {
+}
+/*
+  TEXT ALIGN
+*/
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+/*
+  TRANSITION
+*/
+.transition-all {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.transition-all-fast {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 2px 4px 10px 0px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 2px 4px 10px 0px rgba(189, 189, 189, 1);
+    box-shadow: 2px 4px 10px 0px rgba(189, 189, 189, 1);
+}
+
+.ease-in {
+    -webkit-animation: easeIn 0.3s ease-in;
+    /* Safari 4+ */
+    -moz-animation: easeIn 0.3s ease-in;
+    /* Fx 5+ */
+    -o-animation: easeIn 0.3s ease-in;
+    /* Opera 12+ */
+    animation: easeIn 0.3s ease-in;
+    /* IE 10+, Fx 29+ */
+}
+
+.ease-out {
+    -webkit-animation: easeOut 0.3s forwards;
+    /* Safari 4+ */
+    -moz-animation: easeOut 0.3s forwards;
+    /* Fx 5+ */
+    -o-animation: easeOut 0.3s forwards;
+    /* Opera 12+ */
+    animation: easeOut 0.3s forwards;
+    /* IE 10+, Fx 29+ */
+}
+@keyframes easeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes easeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #ffffff;
+}

@@ -1,0 +1,31 @@
+.alert-main {
+    padding: 14px;
+
+    .alert-wrapper {
+        background-color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 14px;
+        font-size: 0.85rem;
+        flex: 1;
+    }
+    .msg {
+        padding-right: 14px;
+        font-weight: bold;
+    }
+    .x {
+        width: 24px;
+        height: 20px;
+    }
+}
+.error {
+    
+    color: #ea4646;
+    fill: #ea4646;
+}
+.top {
+    top: 0;
+}
+.right {
+    right: 0;
+}

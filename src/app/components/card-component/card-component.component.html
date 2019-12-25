@@ -1,0 +1,32 @@
+<div class=" card-main row no-margin h-100">
+    <div class="card-wrapper box-shadow row no-margin col-12 no-padding h-100">
+        <div class="row no-margin col-12 no-padding flex horizontal-center vertical-center">
+            <div class="row no-margin col-12 card-header flex horizontal-center">
+                {{ item.name }}
+            </div>
+        </div>
+        <div class="row no-margin col-12 no-padding">
+            <div class="card-body row no-margin col-12">
+                <div class="row no-margin col-12 no-padding">
+                    <span class="s-title">{{ STAR_SHIP.NAME }}:</span>&nbsp;<span class="s-value">{{ item.name }}</span>
+                </div>
+                <div class="row no-margin col-12 no-padding">
+                    <span class="s-title">{{ STAR_SHIP.MODEL }}:</span>&nbsp;<span class="s-value">{{ item.model }}</span>
+                </div>
+                <div class="row no-margin col-12 no-padding">
+                    <span class="s-title">{{ STAR_SHIP.MGLT }}:</span>&nbsp;<span class="s-value">{{ item.MGLT }} <b>{{STAR_SHIP.PER_HOUR}}</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="row no-margin col-12 no-padding">
+            <div class="card-footer row no-margin col-12">
+                <div class="row no-margin col-6 no-padding flex horizontal-start">
+                    <span class="s-title">{{ STAR_SHIP.STOPS }}:</span>&nbsp;<span class="s-value">{{ item.stops }}</span>
+                </div>
+                <div class="row no-margin col-6 no-padding flex horizontal-end">
+                    <span class="s-title">{{ STAR_SHIP.CONSUMABLES }}:</span>&nbsp;<span class="s-value">{{ item.consumables }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
