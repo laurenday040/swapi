@@ -10,7 +10,7 @@ The main requirements are:
 - Now you have to go to directory project to install npm dependency
 - You have 2 choices:
   - Use npm install
-  - Install Yarn package manager and install packages with yarn RECOMENDED
+  - Install Yarn package manager and install packages with yarn (RECOMMENDED)
 
 ## Development server
 
